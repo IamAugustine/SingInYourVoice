@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0551148c-2356-43ae-b2e4-952749eb5ccb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>VoiceConverter.py</StartupFile>
+    <StartupFile>Voice_Converter.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,8 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="say_hello.py" />
-    <Compile Include="VoiceConverter.py" />
+    <Compile Include="Voice_Converter.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
