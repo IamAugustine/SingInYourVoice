@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sing_In_Your_Voice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="siyv_v01" Height="470" Width="820"
+        ResizeMode="CanMinimize">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width= "318*"/>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width= "31*"/>
+            <ColumnDefinition Width="359*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <ListBox x:Name="savedProjsList" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="250" Margin="10,107,0,0" Grid.RowSpan="2">
+            <ListBox x:Name="projNames" Height="250" Width="250" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.506,0.492" FontSize="14"/>
+        </ListBox>
+
+
+        <Button x:Name="newProj" Content="New Project" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="47" Margin="316,107,0,0" VerticalAlignment="Top" Width="148" Cursor="" FontFamily="Bahnschrift Light" FontSize="16" BorderBrush="{x:Null}"/>
+        <Button x:Name="settingsBtnTitle" Content="Settings" HorizontalAlignment="Left" Margin="316,88,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="4" Height="47" Width="148" FontSize="16" FontFamily="Bahnschrift Light" BorderBrush="{x:Null}"/>
+        <Button x:Name="importBtnTitle" Content="Import Projects" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="47" Margin="316,207,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="148" FontSize="16" FontFamily="Bahnschrift Light" BorderBrush="{x:Null}"/>
+
+
+        <ListBox x:Name="projTemplates" Grid.Column="3" Margin="94,107,10,77" Grid.RowSpan="2">
+            <ListBox Height="229" Width="256" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.512,0.499" FontSize="14"/>
+        </ListBox>
+
+
+        <Label x:Name="smallVerNum" Content="v0.1" Grid.Column="3" Margin="309,179,10,0" Grid.Row="1"/>
+        <Label x:Name="smallcredits" Content="Made by [insert names here]" Grid.Column="3" Margin="188,161,10,14" Grid.Row="1"/>
+        <Label x:Name="placeholderTitleLabel" Content="[placeholder title]" Grid.ColumnSpan="4" Margin="236,10,269,151" FontSize="36" FontFamily="Bahnschrift Light"/>
+
+
+
 
     </Grid>
 </Window>
