@@ -20,5 +20,12 @@ namespace Sing_In_Your_Voice
         {
             InitializeComponent();
         }
+
+        private void newProj_win(object sender, RoutedEventArgs e)
+        {
+            projMaker projMaker = new projMaker();
+            projMaker.Show();
+            
+        }
     }
 }

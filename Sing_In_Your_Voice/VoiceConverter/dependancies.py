@@ -1,11 +1,12 @@
-# In this file, put any python packages needed for this project
-# make sure to give short explanations if needed
+# Place any dependancies for this app in this file 
 
+import os
+import sys 
 import amphion
 import bark
 import soundfile as sf
 import numpy as np
-import torch 
+import torchaudio 
 
 
 
